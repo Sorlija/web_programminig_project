@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar & Footer */
+.bg-pink {
+    background-color: #f4a7c5 !important;
+}
+
+.btn-pink {
+    background-color: #f4a7c5;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #e17b9a;
+}
+
+footer {
+    background-color: #f4a7c5;
+}
+
+/* Hero Section */
+h1 {
+    color: #f4a7c5;
+    font-weight: bold;
+}
+
+h2 {
+    color: #f4a7c5;
+    font-weight: bold;
+}
+
+/* Product Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Makes sure the body content and image are handled properly */
+}
+
+.card-title {
+    font-weight: bold;
+    color: #f4a7c5;
+}
+
+.card-body {
+    background-color: #fff;
+    flex-grow: 1; /* Ensures the body takes up remaining space */
+}
+
+.card-text {
+    color: #666;
+}
+
+.card-img-top {
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits the container */
+    width: 100%; /* Makes the image responsive */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  .card img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  
+  
