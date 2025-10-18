@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/spapp.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.spapp.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#page1">Home</a>
+                <li><a href="#page2">About</a>
+                <li><a href="#page3">Products</a>
+                <li><a href="#page3">Cart</a>
+                <li><a href="#page3">Login</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pageContent">
+        <main id="spapp" role="main">
+            <section id="page1" data-load="home.html">
+            </section>
+            <section id="page2" data-load="about.html">
+            </section>
+            <section id="page3" data-load="products.html">
+            </section>
+            <section id="page4" data-load="cart.html">
+            </section>
+            <section id="page5" data-load="login.html">
+            </section>
+        </main>
+    </section>
+    <footer>
+        
+    </footer>
+
+
+    <script>
+        var app = $.spapp({
+            defaultView: "#page1",
+            templateDir: "views/"
+
+        });
+
+
+        app.run();
+    </script>
+</body>
+
+</html>
